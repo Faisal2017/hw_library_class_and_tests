@@ -34,6 +34,10 @@ public class Library {
     return bookCount() == this.shelves.length;
   }
 
+  public void removeBookFromShelf(Book book) {
+    int index = bookCount();
+    this.shelves[index - 1] = null;
+  }
 
 }
 
